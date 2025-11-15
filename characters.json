@@ -1,0 +1,194 @@
+[
+  {
+    "id": "beggar_jim",
+    "name": "Beggar Jim",
+    "location": "Village of Ebstone",
+    "short": "A weary middle-aged beggar who once tended a small farm near Ebstone. Something in his past broke his life apart, leaving him wandering the village streets searching for answers. Despite his ragged appearance, he remains quiet, polite, and focused on finding what he has lost."
+  },
+  {
+    "id": "bodmin_whitearm",
+    "name": "Bodmin Whitearm",
+    "location": "Ebstone Jetty",
+    "short": "A burly young guardsman stationed at the Ebstone Jetty, known for his loud mouth and constant need to intimidate others. He carries a large axe, wears a yellow tunic, and throws his weight around as if the entire village should fear him. Most villagers keep their distance, treating him more as a nuisance than a protector."
+  },
+  {
+  "id": "bori_stepstone",
+  "name": "Bori Stepstone",
+  "location": "Ebstone Market",
+  "short": "A lively dwarven trinket seller who runs a small stall at the Ebstone marketplace. He deals in scraps, oddities, and cheap jewels, always eager to convince passers-by that his wares are more valuable than they appear. Despite his scruffy appearance and crooked grin, Bori is friendly, energetic, and quick to spark a conversation."
+  },
+  {
+  "id": "clayton_fairhair",
+  "name": "Clayton Fairhair",
+  "location": "Ebstone Blacksmith",
+  "short": "Ebstone’s long-time village blacksmith, broad-shouldered and dependable. He runs the forge with pride, crafting sturdy tools and weapons for the locals. Known for his fairness and steady temperament, he stands up for others and values honest, disciplined work."
+  },
+  {
+  "id": "coraline_elbridge",
+  "name": "Coraline Elbridge",
+  "location": "Village of Ebstone",
+  "short": "A sharp-witted councilwoman known for her business sense and her discreet dealings on the side. Calm, composed, and practical, she helps her husband run Elbridge’s Essentials while quietly navigating Ebstone’s shadier trade networks. Coraline is careful with what she reveals, showing a polite face to the public but keeping her true interests close to her chest."
+  },
+  {
+  "id": "dorian_andis",
+  "name": "Dorian Andis",
+  "location": "Ebstone Shrine",
+  "short": "A thoughtful cleric of the Order of Divinity who tends the Ebstone Shrine and offers simple healing and mending to travellers. Soft-spoken and sincere, he balances his duties with tailoring work, often repairing clothes for those in need. Though gentle and cautious by nature, he keeps a keen eye on the worries and rumours brought to the shrine."
+  },
+  {
+  "id": "filigree_coppers",
+  "name": "Filigree Coppers",
+  "location": "Elbridge’s Essentials, Ebstone",
+  "short": "A sharp-tongued halfling merchant who deals in magical trinkets and rare curiosities. He travels with an ever-changing stock of enchanted gear and potions, offering appraisals and trades to anyone with coin to spare. Quick-witted and charismatic, Filigree mixes showmanship with shrewd business sense, always on the lookout for valuable finds."
+  },
+  {
+  "id": "garrick_degore",
+  "name": "Garrick Degore",
+  "location": "Ebstone Jetty",
+  "short": "A seasoned Sarnath Army officer stationed at the Ebstone Jetty to enforce the lockdown. Gruff and disciplined, he keeps a close watch on all river traffic and speaks plainly, but not unkindly. A loyal soldier with sharp instincts, Garrick follows his orders without compromise and stays alert to any signs of trouble in the region."
+  },
+  {
+  "id": "gneiss_elbridge",
+  "name": "Gneiss Elbridge",
+  "location": "Ebstone Town Hall / Elbridge’s Essentials",
+  "short": "The headman of Ebstone and proprietor of Elbridge’s Essentials. A precise, well-spoken organiser who takes village matters seriously and strives to keep Ebstone safe and orderly. Known for his thoughtful leadership and fondness for planning, Gneiss splits his time between council duties and managing the family shop."
+  },
+  {
+  "id": "godfrey_alderman",
+  "name": "Godfrey Alderman",
+  "location": "Ebstone Bridge / Village of Ebstone",
+  "short": "An elderly bridge guard of the Ebstone Guard, known for his sleepless nights and ever-present pipe. Grumpy but vigilant, he spends long hours watching the forest edge and offering gloomy warnings to travellers. Though withdrawn, Godfrey is respected for his experience and his stubborn commitment to keeping the village safe."
+  },
+  {
+  "id": "gris",
+  "name": "Gris",
+  "location": "Village of Ebstone",
+  "short": "A ragged, storm-mad beggar who wanders the streets of Ebstone barefoot and muttering prophecies. Thin, unwashed, and wrapped in a tattered blue robe, he spends his days begging and preaching doom to anyone who passes by."
+  },
+  {
+  "id": "gyntry_greystone",
+  "name": "Gyntry Greystone",
+  "location": "The Golden Pick, Village of Ebstone",
+  "short": "A quiet, thoughtful waiter at The Golden Pick, polite and calm with a composed presence that hints at a practiced discipline. Though older and walking with a slight limp, he still carries himself like someone who has seen much in life. Known for his careful words and keen awareness of tavern happenings, Gyntry works diligently despite his lingering knee injury."
+  },
+  {
+  "id": "harkan_roth",
+  "name": "Harkan Roth",
+  "location": "The Golden Pick, Village of Ebstone",
+  "short": "A scarred, one-eyed half-orc mercenary lingering in The Golden Pick while working for the Crimson Brotherhood. Hostile, abrasive, and always armed, he has a reputation for bullying the weak and backing down from real danger. Harkan keeps a watchful eye on travellers, driven by a paid hunt for a fugitive thief."
+  },
+  {
+  "id": "harold_travertine",
+  "name": "Harold Travertine",
+  "location": "Village of Ebstone",
+  "short": "The well-known but unimpressive captain of the Ebstone Guard, more comfortable drafting paperwork than making real decisions. Harold avoids complications, prefers routine, and often uses buzzwords to sound more important than he is. Though generally harmless and reliable enough, he is widely seen as bumbling and ineffective in his role."
+  },
+  {
+  "id": "harwin_stoutbeard",
+  "name": "Harwin Stoutbeard",
+  "location": "Village of Ebstone",
+  "short": "A quiet, middle-aged dwarf and former Bluestone miner, now doing odd jobs around Ebstone. Recognisable by his enormous beard and his ever-present goat, Midge, he keeps mostly to himself and rarely speaks unless spoken to. Harwin spends his days wandering the village or waiting for casual work, with Midge faithfully trailing behind."
+  },
+  {
+  "id": "igneous_wylde",
+  "name": "Igneous Wylde",
+  "location": "Bogfield Farm / The Golden Pick",
+  "short": "A burly, foul-tempered farmer who runs Bogfield Farm and spends most of his free time drinking at The Golden Pick. Known for his constant grumbling and loud burps, Igneous is nonetheless respected as the owner of Ebstone’s only active farm. Gruff but hardworking, he complains often yet fiercely defends his land from kobolds."
+  },
+  {
+  "id": "jinny_pine",
+  "name": "Jinny Pine",
+  "location": "Bogfield Farm",
+  "short": "A copper-haired young mother living on Bogfield Farm with her husband Robert. Friendly and talkative, she often feels isolated on the farm and seeks company in town when she can. Jinny loves gardening and her family, but the pressures of farm life and recent troubles weigh heavily on her."
+  },
+  {
+  "id": "loreli_greystone",
+  "name": "Loreli Greystone",
+  "location": "The Golden Pick, Village of Ebstone",
+  "short": "A lively and charming waitress at The Golden Pick with an adventurous streak and a habit of flirting with patrons. Outgoing and curious, Loreli often daydreams of a life beyond Ebstone, though she fears time is slipping away. Known for her bright laugh and risky impulses, she is the more spirited of the Greystone sisters."
+  },
+  {
+  "id": "loroc_waters",
+  "name": "Loroc Waters",
+  "location": "Ebstone Region",
+  "short": "A towering quarry foreman and council member known for his booming voice and dark humor. Jovial at first glance but quick to turn serious, Loroc takes Ebstone’s safety and future to heart. A hardworking, well-connected figure, he roams between the quarries, village, and tavern while pushing relentlessly for the region’s renewal."
+  },
+  {
+  "id": "marisa_layhearth",
+  "name": "Marisa Layhearth",
+  "location": "Ember & Hearth Bakery, Village of Ebstone",
+  "short": "The warm-hearted baker who runs Ebstone’s long-standing village bakery. Quiet, steady, and dedicated to her craft, Marisa finds comfort in her daily routine of kneading dough and tending the ovens. Friendly but reserved, she looks after the locals with fresh bread and a calm presence, rarely straying far from the shop she inherited."
+  },
+  {
+  "id": "midge_the_goat",
+  "name": "Midge the Goat",
+  "location": "Village of Ebstone",
+  "short": "Harwin Stoutbeard’s perpetually annoyed goat, known for her scruffy gray coat and unsettling stare. She follows Harwin everywhere with loyal stubbornness, glaring at anyone who gets too close. Her faded bell never rings, but her presence is impossible to miss."
+  },
+  {
+  "id": "mildred_stone",
+  "name": "Mildred Stone",
+  "location": "Ebstone Marketplace",
+  "short": "A gentle, silver-haired herbalist who sells remedies and medicinal herbs at the village market. Soft-spoken and patient, Mildred is well-liked for her helpful nature and steady presence. She keeps to her quiet routine of tending plants and preparing cures, offering calm guidance to those who seek her knowledge."
+  },
+  {
+  "id": "moss_epelbark",
+  "name": "Moss Epelbark",
+  "location": "Epelbark’s Orchard, Village of Ebstone",
+  "short": "A sturdy orchard farmer known for his reliable work ethic and impressive apple harvests. Moss tends his family orchard with pride, often selling fruit at the village market and experimenting with new cider blends—resulting in the occasional hiccup mid-sentence. Hard-working and practical, he keeps a close watch on the safety of his orchard and the well-being of Ebstone."
+  },
+  {
+  "id": "oliver_flinth",
+  "name": "Oliver \"Hemlock\" Flint",
+  "location": "Village of Ebstone",
+  "short": "Ebstone’s lanky, soft-spoken carpenter, known for his steady craftsmanship and practical nature. Nicknamed “Hemlock” since childhood after a near-fatal poisoning, he remains humble and dedicated to his work, often helping maintain the village’s wooden structures. A quiet presence, Oliver keeps to his routine and takes pride in reliable, honest labor."
+  },
+  {
+  "id": "robert_pine",
+  "name": "Robert Pine",
+  "location": "Bogfield Farm, Village of Ebstone",
+  "short": "A hardworking tenant farmer at Bogfield Farm, known for his steady temperament and dedication to keeping the fields productive despite growing kobold threats. Slim and athletic, he spends long days tending livestock and crops, often seen chewing on a stalk of wheat. Robert cares deeply for his wife Jinny and their large family, pushing through his injuries to keep the farm running."
+  },
+  {
+  "id": "schist",
+  "name": "Schist",
+  "location": "Ebstone Blacksmith, Village of Ebstone",
+  "short": "A young half-elf blacksmith’s apprentice with bright green eyes and a mop of dark hair. Lean, curious, and ambitious, Schist mixes solid craftsmanship with daydreams of adventure. Nervous moments bring out his faint stutter. He knows Bluestone Mine better than anyone in Ebstone and has spotted a yellow-hooded stranger lurking near several dangerous sites, information he’s eager—yet hesitant—to share."
+  },
+  {
+  "id": "shady_traveller",
+  "name": "Shady Traveller",
+  "location": "The Golden Pick Tavern & Ebstone Marketplace",
+  "short": "A tall, cloaked wanderer of unclear origin who drifts through Ebstone without a word. Locals see only a foreign-cut cloak, quick steps, and a habit of slipping away the moment someone approaches. No one knows their purpose—only that they arrived with the whispering storm and seem to watch the village with quiet intent."
+  },
+  {
+  "id": "tabatha_greystone",
+  "name": "Tabatha Greystone",
+  "location": "The Golden Pick Tavern, Village of Ebstone",
+  "short": "The stern-eyed, straw-haired landlady of The Golden Pick. A hard-working, no-nonsense tavern keeper with a bad back, a big heart, and an even bigger sense of responsibility. Motherly toward patrons and fiercely protective of her sister Loreli, Tabatha runs the tavern with firm discipline and genuine care—just don’t test her closing-time stare."
+  },
+  {
+  "id": "thad_brewer",
+  "name": "Thad Brewer",
+  "location": "Ebstone Jailhouse, Village of Ebstone",
+  "short": "A friendly but hopelessly clumsy young guard with a mop of messy hair and a booming \"oh, what a day!\" Always trying to prove himself, always spilling something. Thad idolizes adventurers, adores his half-sister Ganla Brewster, and dreams of heroism—right up until real danger appears."
+  },
+  {
+  "id": "tomal_stone",
+  "name": "Tomal Stone",
+  "location": "Ebstone Village, House of Stone; Blackstone Quarry",
+  "short": "A cheerful, muscular quarryman with a permanent grin and spotless work shirts. Tomal loves his wife Mildred and knows stones better than anyone in Ebstone, yet feels unfulfilled—his sculptures earn little interest. Secretly obsessed with rare rocks from the Millpond, he’ll promise coin he doesn’t have to acquire them."
+  },
+  {
+  "id": "yael_marlen",
+  "name": "Yael Marlen",
+  "location": "Layhearth Bakery, Village of Ebstone",
+  "short": "An eighteen-year-old, waifish baker’s apprentice with flour-stained clothes and a stone fish earring. Shy on the surface but inwardly bitter and unstable, Yael is the youngest member of the Coven-at-the-Ebb. Traumatized by the Storm Cult’s destruction of Outaven and her mother’s death, she gossips dangerously about the Coven while quietly burning with hatred and purpose."
+  },
+  {
+  "id": "yori_ironhand",
+  "name": "Yori Ironhand",
+  "location": "Caged outside the Ebstone Jailhouse",
+  "short": "A storm-mad dwarf locked in a cage awaiting transport to Sarnath. Filthy, emaciated, and clad in torn blue robes, Yori shifts between eerie lucidity and violent, delusional outbursts. Once a pilgrim who lashed himself to Stormpoint’s rocks to feel the Storm’s power, his mind never returned. Friend to Aelar Stormborne and fully consumed by the Storm’s madness."
+  }
+]

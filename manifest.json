@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Tidefall UI Extended",
+  "version": "1.1.1",
+  "description": "Addon with multitude of functionality and tools extending your adventure with Tidefall!",
+  "permissions": ["storage", "tabs"],
+  "content_scripts": [{
+    "matches": ["https://portal.alpha.infinityfiction.ai/"],
+    "js": [
+      "overlay_shared.js",
+      "overlay_ui.js",
+      "overlay_events.js",
+      "overlay_quests_ui.js",
+      "overlay_quests_events.js"
+    ],
+    "run_at": "document_idle",
+    "all_frames": false
+  }],
+  "web_accessible_resources": [
+  "ebstone_map.png",
+  "locations.json",
+  "characters.json"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "Tidefall UI Extended Settings",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "toggle-counter": {
+      "suggested_key": { "default": "Alt+Shift+C" },
+      "description": "Toggle counter visibility on the active tab"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tidefall-ui-extended@tidefall-unofficial",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "stormpoint": {
+    "description": "A windswept coastal outpost watching the Snarling Coast.",
+    "majorPlaces": [
+      "Harbor Master’s Office",
+      "Stormpoint Lighthouse",
+      "Broken Anchor Tavern"
+    ]
+  },
+  "village-of-ebstone": {
+    "description": "The bustling heart of the Ebstone Hills.",
+    "majorPlaces": [
+      "City Hall",
+      "Central Market",
+      "Blackstone Inn"
+    ]
+  }
+}
