@@ -1,11 +1,14 @@
 {
   "manifest_version": 2,
   "name": "Tidefall UI Extended",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "description": "Addon with multitude of functionality and tools extending your adventure with Tidefall!",
   "permissions": ["storage", "tabs"],
   "content_scripts": [{
-    "matches": ["https://portal.alpha.infinityfiction.ai/"],
+    "matches": [
+      "https://portal.alpha.infinityfiction.ai/*",
+      "https://accounts.alpha.infinityfiction.ai/*"
+    ],
     "js": [
       "overlay_shared.js",
       "overlay_ui.js",
