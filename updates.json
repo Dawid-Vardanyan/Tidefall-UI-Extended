@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "tidefall-ui-extended@tidefall-unofficial": {
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://github.com/Dawid-Vardanyan/Tidefall-UI-Extended/releases/download/v1.0.0/tidefall-ui-extended-1.0.0.xpi"
+        }
+      ]
+    }
+  }
+}

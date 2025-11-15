@@ -37,6 +37,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "tidefall-ui-extended@tidefall-unofficial",
+      "update_url": "https://dawid-vardanyan.github.io/Tidefall-UI-Extended/updates.json",
       "data_collection_permissions": {
         "required": ["none"],
         "optional": []
