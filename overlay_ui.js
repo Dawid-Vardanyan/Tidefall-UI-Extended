@@ -867,7 +867,7 @@ overlay.mapImageUrl = mapImageUrl;
 
               <!-- Główne miasta -->
               <button class="map-location" data-loc="village-of-ebstone" data-name="Village of Ebstone" style="top: 43%; left: 67%;">📍</button>
-              <button class="map-location" data-loc="outhaven" data-name="Outhaven" style="top: 66%; left: 20.5%;">📍</button>
+              <button class="map-location" data-loc="outaven" data-name="Outaven" style="top: 66%; left: 20.5%;">📍</button>
               <button class="map-location" data-loc="sarmuth" data-name="Sarmuth" style="top: 29%; left: 29%;">📍</button>
               <button class="map-location" data-loc="gull" data-name="Gull" style="top: 43%; left: 17.5%;">📍</button>
               <button class="map-location" data-loc="stormpoint" data-name="Stormpoint" style="top: 89%; left: 15%;">📍</button>
@@ -875,7 +875,7 @@ overlay.mapImageUrl = mapImageUrl;
               <!-- Mniejsze lokacje -->
               <button class="map-location" data-loc="bogfield-farm" data-name="Bogfield Farm" style="top: 51%; left: 78%;">📍</button>
               <button class="map-location" data-loc="strandford" data-name="Strandford" style="top: 29%; left: 67%;">📍</button>
-              <button class="map-location" data-loc="stony-holl" data-name="Stony Holl" style="top: 33%; left: 60%;">📍</button>
+              <button class="map-location" data-loc="stony-holt" data-name="Stony Holt" style="top: 33%; left: 60%;">📍</button>
 
               <!-- Kopalnie -->
               <button class="map-location" data-loc="vaultire-mine" data-name="Vaultire Mine" style="top: 36%; left: 38%;">📍</button>

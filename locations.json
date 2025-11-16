@@ -5,38 +5,44 @@
       {
         "id": "stormpoint-tower",
         "name": "Stormpoint Tower",
-        "description": "A lone stone tower clinging to the cliff edge, its spiral staircase leading to an exposed peak where sacrifices are lashed to lightning and wind.",
+        "description": "Weather-beaten stone tower clinging to the cliff edge. A spiral staircase coils up to an exposed peak constantly battered by wind and rain, while the ground floor holds a narrow corridor carved out by centuries of storms.",
         "art": "stormpoint-tower.png"
       },
       {
         "id": "stormpoint-tower-room",
         "name": "Stormpoint Tower Room",
-        "description": "A long ground-floor corridor ending in a cramped chamber used by cultists for chanting, carving symbols, and preparing ritual victims.",
+        "description": "A dim, sheltered chamber at the southern end of the tower's ground-floor corridor. Used as storage and ritual preparation space by Storm Cultists seeking refuge from the relentless winds.",
         "art": "stormpoint-tower-room.png"
       },
       {
         "id": "stormpoint-fort-ruins",
-        "name": "Fort Ruins",
-        "description": "The shattered remains of an old sea fort, with only scattered foundations left after centuries of storms and neglect.",
+        "name": "Stormpoint Fort Ruins",
+        "description": "Crumbled foundations and scattered stonework of a once-proud coastal fort. Blue robes, bones, and rusted manacles lie between weathered walls, hinting at the bloody rituals performed by Storm Worshippers.",
         "art": "stormpoint-fort-ruins.png"
+      },
+      {
+        "id": "stormpoint-worshipper-shelters",
+        "name": "Storm Worshipper Shelters",
+        "description": "Makeshift huts and canvas lean-tos built against ruined fort walls. Here the Cultists regroup, chant their mantras, tend weak fires, and prepare offerings for their violent rites.",
+        "art": "stormpoint-worshipper-shelters.png"
+      },
+      {
+        "id": "stormpoint-camp",
+        "name": "Stormpoint Camp",
+        "description": "A ramshackle encampment of fanatics who willingly live within the Storm’s boundary. Tents, crude shelters, and scattered belongings form a small community devoted entirely to the Storm’s influence.",
+        "art": "stormpoint-camp.png"
       },
       {
         "id": "stormpoint-crags",
         "name": "Ebstone Crags",
-        "description": "Vast, sheer cliffs of dark stone that plunge hundreds of feet into the raging sea. At night veins of blue glimmer like lightning trapped in the rock.",
+        "description": "Vast sheer cliffs of black stone rising hundreds of feet above the raging sea. At night faint blue veins shimmer through the rock, as if lightning were trapped beneath the surface.",
         "art": "stormpoint-crags.png"
       },
       {
-        "id": "stormpoint-cultist-camp",
-        "name": "Stormpoint Camp",
-        "description": "A ramshackle line of tents and makeshift shelters where itinerant Storm Worshippers live, pray, and await their chance to walk willingly into the Storm’s embrace.",
-        "art": "stormpoint-cultist-camp.png"
-      },
-      {
-        "id": "stormpoint-sacrifice-grounds",
-        "name": "Sacrifice Grounds",
-        "description": "An open cliffside platform littered with bones, burnt ropes, blue robes, and blood-stained stones where the cult performs their rituals.",
-        "art": "stormpoint-sacrifice-grounds.png"
+        "id": "stormpoint-cliffside",
+        "name": "Stormpoint Cliffside",
+        "description": "The perilous cliff edge where waves crash violently below. A site of cult rituals—victims thrown into the sea, boats pushed toward the Storm, and offerings suspended against the sky.",
+        "art": "stormpoint-cliffside.png"
       }
     ],
     "locationArt": "stormpoint.png"
@@ -45,48 +51,260 @@
     "description": "A decaying frontier village near the River Ebb, once a booming mining town but now a paranoid and impoverished settlement overshadowed by the decline of its quarries and the oppressive reach of Sarnath.",
     "majorPlaces": [
       {
-        "id": "ebstone-marketplace",
-        "name": "Ebstone Marketplace",
-        "description": "The cobbled central square of the village, now half-empty, with traders wary of outsiders and rumours spreading faster than goods.",
-        "art": "ebstone_marketplace.jpg"
-      },
-      {
-        "id": "golden-pick-tavern",
-        "name": "Golden Pick Tavern",
-        "description": "A once-bustling tavern now kept afloat by gossip, ale, and the sharp-tongued landlady Tabatha Greystone.",
-        "art": "golden_pick_tavern.jpg"
+        "id": "ebstone-blacksmith",
+        "name": "Ebstone Blacksmith",
+        "description": "Clayton Fairhair’s forge and workshop, with an open-sided design for ventilation. Metalwork echoes through the market square during the day. Tools, weapons, and mining gear hang on display, and a small back room stores valuables and offers a simple bed for the apprentice, Schist.",
+        "art": "ebstone-blacksmith.png"
       },
       {
         "id": "ebstone-bridge",
         "name": "Ebstone Bridge",
-        "description": "A stone bridge crossing the River Ebb at the village’s north side, the main route for barges and travellers escaping the muddy roads.",
+        "description": "A sturdy stone bridge crossing the River Ebb toward the Sarnath Road and the Ebstone Forest. A small guard post stands at the far side, often occupied by a dozing sentry. Faded signage warns travellers of dangers in the forest ahead.",
         "art": "ebstone-bridge.png"
       },
       {
-        "id": "squatter-alleys",
-        "name": "Abandoned Alleys",
-        "description": "Dilapidated homes and narrow lanes occupied sporadically by squatters, storm pilgrims, or evicted families.",
-        "art": "ebstone_abandoned_alleys.jpg"
+        "id": "ebstone-empty-shack",
+        "name": "Ebstone Empty Shack",
+        "description": "A storm-ravaged, abandoned house used as occasional shelter by Beggar Jim. The inside is barren and decaying—broken windows, an empty hearth, and scattered debris. A small overgrown yard sits behind the shack, choked with weeds.",
+        "art": "ebstone-empty-shack.png"
       },
       {
-        "id": "ebside-bogs",
-        "name": "Ebside Bogs",
-        "description": "A harsh wetland southeast of the village, avoided by locals except when desperate for shortcuts.",
-        "art": "ebside_bogs.jpg"
+        "id": "ebstone-jailhouse",
+        "name": "Ebstone Jailhouse",
+        "description": "Headquarters of the Ebstone Guard with a single holding cell and outdoor rusted cages for dangerous detainees. The building includes a cramped office, a guard common room, and a dim, bare cell used for drunks, troublemakers, or those suspected of Storm Madness.",
+        "art": "ebstone-jailhouse.png"
       },
       {
-        "id": "ebstone-signpost",
-        "name": "Ebstone Signpost",
-        "description": "A weather-beaten wooden sign giving distances to the surrounding hamlets and quarries across the Ebstone Hills.",
-        "art": "ebstone_signpost.jpg"
+        "id": "ebstone-jetty",
+        "name": "Ebstone Jetty",
+        "description": "The village’s main loading dock on the River Ebb, built from worn wooden planks and fitted with bollards and a pulley crane. Barges from Sarnath once moored here, but travel is restricted during the current lockdown. Guards watch over the jetty—some more dutiful than others.",
+        "art": "ebstone-jetty.png"
       },
       {
-        "id": "blackstone-quarry",
-        "name": "Blackstone Quarry",
-        "description": "The last operational quarry near Ebstone, its output dwindling but still demanded as tithe by Sarnath.",
-        "art": "blackstone_quarry.jpg"
+        "id": "ebstone-marketplace",
+        "name": "Ebstone Marketplace",
+        "description": "The busy central square where villagers trade goods, gather news, and host weekly stalls. Surrounding buildings include the Golden Pick Tavern, Layhearth Bakery, the Town Hall, Elbridge’s Essentials, and the local shrine. Travelling merchants occasionally bring curiosities and rare items.",
+        "art": "ebstone-marketplace.png"
+      },
+      {
+        "id": "ebstone-shrine",
+        "name": "Ebstone Shrine",
+        "description": "A modest stone chapel dedicated to Saint Godeca, with candles lit nightly and a wicker offering basket. The room is quiet and solemn, maintained by Dorian Andis. Though sparsely visited, it remains a place of tradition, reflection, and the Virtues.",
+        "art": "ebstone-shrine.png"
+      },
+      {
+        "id": "ebstone-town-hall",
+        "name": "Ebstone Town Hall",
+        "description": "A worn two-storey council building overlooking the marketplace. The ground floor holds a gathering hall, council chamber, and kitchen, while the upper floor contains the headman’s office, treasury, and village records. A bell tower rings before public meetings, though such gatherings are rare.",
+        "art": "ebstone-town-hall.png"
+      },
+      {
+        "id": "ebstone-elbridges-essentials",
+        "name": "Elbridge's Essentials",
+        "description": "The main trading post of Ebstone, stocked with clothing, tools, food supplies, and basic arms. Tall shelves crowd the single-storey shop, and a bell above the door alerts the Elbridges to customers. A small stand in the back hosts a travelling magical-item merchant.",
+        "art": "ebstone-elbridges-essentials.png"
+      },
+      {
+        "id": "ebstone-epelbarks-orchard",
+        "name": "Epelbark's Orchard",
+        "description": "A family orchard on Ebstone’s northwest outskirts, growing apples, pears, and nuts. A small house, a greenhouse, and a cider room sit along the drystone-walled rows. Moss Epelbark experiments with crude ciders here, lit nightly by a strange glowing garlic bulb.",
+        "art": "ebstone-epelbarks-orchard.png"
+      },
+      {
+        "id": "ebstone-layhearth-bakery",
+        "name": "Layhearth Bakery",
+        "description": "Ebstone’s primary bakery, known for its clay beehive oven and rows of fresh loaves. The narrow shopfront opens into a flour-covered kitchen filled with dough, spices, and utensils. Marisa Layhearth supplies most of the village and several local businesses.",
+        "art": "ebstone-layhearth-bakery.png"
+      },
+      {
+        "id": "ebstone-middlestone-stables",
+        "name": "Middlestone Stables",
+        "description": "A simple wooden stable north of the village, lightly maintained by the guard. Travellers sometimes sleep in the large rear barn when the tavern is full. One elderly but well-kept nag is kept for sale.",
+        "art": "ebstone-middlestone-stables.png"
+      },
+      {
+        "id": "ebstone-stonegrave-manor",
+        "name": "Stonegrave Manor House",
+        "description": "An abandoned former governor’s residence on Ebstone’s outskirts. The manor’s stone lower floor and ruined wooden upper floor show fire, lightning, and decades of neglect. Locals avoid the estate due to persistent rumours, strange lights, and the barren ground surrounding it.",
+        "art": "ebstone-stonegrave-manor.png"
+      },
+      {
+        "id": "ebstone-manor-ground-floor",
+        "name": "Stonegrave Manor – Ground Floor",
+        "description": "The lower level of the manor contains the entrance hall and the vast, decaying ballroom. Shattered windows, frayed ropes, and soot-stained stonework hint at violent history. The ballroom’s ruined grandeur contrasts sharply with the oppressive stillness that fills the hall.",
+        "art": "ebstone-stonegrave-manor.png"
+      },
+      {
+        "id": "ebstone-manor-ballroom",
+        "name": "Stonegrave Manor – Ballroom",
+        "description": "A once-grand hall now weathered by storms and age. Broken patio doors open to the dead garden, while an empty fireplace dominates one wall. Faded markings and a long-abandoned ritual setup linger on the floor, leaving the room unsettlingly silent.",
+        "art": "ebstone-stonegrave-manor.png"
+      },
+      {
+        "id": "ebstone-manor-upper-floor",
+        "name": "Stonegrave Manor – Upper Floor",
+        "description": "The manor’s upper corridor splits toward two bedrooms. The structure is unstable, with burnt timbers, shattered windows, and the lingering scent of old smoke. Wind cuts through broken walls, carrying faint, distant sounds.",
+        "art": "ebstone-stonegrave-manor.png"
+      },
+      {
+        "id": "ebstone-golden-pick-tavern",
+        "name": "The Golden Pick Tavern",
+        "description": "Ebstone’s main tavern—a cosy, worn stone building with a crowded front room, a small bar, and two simple guest rooms upstairs. Locals gather for food, drinks, and news, while the basement stores ale barrels and hides an old secret passage unknown to current residents.",
+        "art": "ebstone-golden-pick-tavern.png"
+      },
+      {
+        "id": "ebstone-message-board",
+        "name": "Ebstone Message Board",
+        "description": "A large cork-and-wood notice board by the tavern entrance displaying job postings, warnings, village news, and faded recruitment papers. New announcements appear alongside decades-old scraps, reflecting the village’s struggles and the world beyond.",
+        "art": "ebstone-message-board.png"
       }
     ],
     "locationArt": "village-of-ebstone.png"
+  },
+  "blackstone-quarry": {
+  "description": "A vast stepped quarry carved deep into the Ebstone Hills, over a hundred meters down, with wooden shelters, cranes, and lift systems clinging to its upper levels. Once a major supplier of black granite to Sarnath, it now struggles under low demand and heavy military taxation, leaving its workers scraping by in dangerous conditions. A murky lake known as the Millpond fills the lowest depths, where unsettling disappearances fuel rumours of something lurking below.",
+  "locationArt": "blackstone-quarry.png"
+  },
+  "vaultire-mine": {
+  "description": "An abandoned precious-metal mine in the Ebstone Hills, now repurposed at night by the Vaultire Bandit Gang as a stash point. Once productive but long dried up, the surrounding area holds scattered shepherd huts and old work paths. Rumours claim the Ebstone Troll rampaged across the hills after failing to find gemstones here. The bandits use the empty shafts to hide contraband stolen from smugglers and travellers moving up from the Snarling Coast.",
+  "locationArt": "vaultire-mine.png"
+  },
+  "aldspar-mine": {
+  "description": "A collapsed, long-abandoned mine whose ruined tunnels now resemble natural caverns. The site was deserted after a catastrophic cave-in that trapped and killed dozens; their remains still lie sealed behind walls of stone. Rumours speak of a massive creature lurking somewhere in the deeper chambers, though no one has confirmed it. Scarlet Kobolds now inhabit the reachable sections of the mine, practicing crude fire magic among the rubble.",
+  "locationArt": "aldspar-mine.png"
+  },
+  "doggindale-mine": {
+  "description": "A mist-choked abandoned mine deep in the Ebstone Hills, feared by locals for its eerie atmosphere and persistent tales of spirits or something far worse dwelling inside. The thick hill-mist seeps into the tunnels, making visibility low and silence oppressive. Rumours claim the mine connects to deeper underways and hides powerful treasure, and the distant roars of the Ebstone Troll are often heard echoing from this direction.",
+  "locationArt": "doggindale-mine.png"
+  },
+  "welkenbare-quarry": {
+    "description": "The largest abandoned quarry in the Ebstone Region, shrouded in constant mist and collapsing terraces. Broken gantries, flooded tunnels, and rotting structures cling to the quarry's edges like the remnants of a once-thriving industrial hub. Locals avoid the area, unnerved by ghostly silhouettes in the fog, strange reflections in the central pit, and the whispered voice of Kutna the Carter said to echo during rainfall.",
+    "majorPlaces": [
+      {
+        "id": "welkenbare-outbuildings",
+        "name": "Welkenbare Outbuildings",
+        "description": "A cluster of eleven decaying wooden buildings lining the rutted road into the quarry: a large communal barn, stables with mule stalls, Kutna the Carter’s workshop, several ruined sleeping huts, and old stone-and-equipment storehouses. Mist gives the entire place a ghost-village appearance, with abandoned tools, tankards, pulleys, and Velorian-stamped metalwork scattered throughout. The structures are sporadically occupied by vagrants and monsters, though Lindarin stays here unharmed—feared or respected by those who lurk nearby.",
+        "art": "welkenbare-outbuildings.png"
+      }
+    ],
+    "locationArt": "welkenbare-quarry.png"
+  },
+  "bluestone-mine": {
+    "description": "The largest and most notorious abandoned mine in the Ebstone Hills. A sprawling, multi-level labyrinth of tunnels once used by miners seeking blue gemstones and rare minerals. Now choked with darkness and echoing with distant sounds, the upper levels are prowled by kobolds who worship the Ebstone Troll dwelling below. The mine is dangerous, unmapped, and nearly impossible to navigate without guidance.",
+    "majorPlaces": [
+      {
+        "id": "bluestone-mine-level-1",
+        "name": "Bluestone Mine – Level 1 (Entrance)",
+        "description": "A vast surface cavern supported by a lattice of wooden beams. Old bunk rooms and a deserted storeroom mark the last traces of human activity. Kobolds pass through frequently, leaving footprints, scraps, and fire pits, but do not live on this level. A vertical elevator shaft stands unusable, forcing explorers to descend toward Level 2 via the minecart tunnel.",
+        "art": "bluestone-mine-level-1.png"
+      },
+      {
+        "id": "bluestone-mine-level-2",
+        "name": "Bluestone Mine – Level 2 (Minecart Tracks)",
+        "description": "A branching network of collapsed tunnels lined with derailed minecarts, bones, and makeshift shrines depicting the troll. The entrance cavern contains the corpses of adventurers and miners slain by blunt-force trauma. A long northern track leads to a ravine destroyed by the troll, with the only safe descent located on a spiraling iron staircase maintained by kobolds.",
+        "art": "bluestone-mine-level-2.png"
+      },
+      {
+        "id": "bluestone-mine-level-3",
+        "name": "Bluestone Mine – Level 3 (Kobold Camp)",
+        "description": "A cavern settlement of roughly thirty tents—though only six kobolds reside here. The campsite is built around a deep sacrificial shaft used to feed offerings to the Ebstone Troll far below. The kobolds are feral, territorial, and violently hostile to intruders. A trapped side passage allows stealthy traversal, and a hoist shaft provides the only route to Level 4.",
+        "art": "bluestone-mine-level-3.png"
+      },
+      {
+        "id": "bluestone-mine-level-4",
+        "name": "Bluestone Mine – Level 4 (Laboratory)",
+        "description": "The deepest and most dangerous level of the mine, containing a hidden research facility and the troll’s nest. Blue storm-crystals illuminate rough tunnels, while sub-chambers house a laboratory office and an animal experimentation room filled with warped creatures. The main chamber holds broken cages, dead researchers, and signs of horrific experiments to fuse storm-crystals into living beings. The Ebstone Troll stalks this level relentlessly.",
+        "art": "bluestone-mine-level-4.png"
+      }
+    ],
+    "locationArt": "bluestone-mine.png"
+  },
+  "chaindeep-mine": {
+    "description": "A deep, unstable abandoned mine in the Ebstone Hills, formed around a colossal natural sinkhole. Rusted chains hang from the cavern ceilings, swaying in the draft from the depths. The mine is treacherous—filled with collapsing pits, extreme heat far below, abandoned gear, and rumours of monstrous creatures lurking in the darkness. Many adventurers, miners, and wanderers have vanished here, their belongings scattered throughout the sinkholes and tunnels.",
+    "majorPlaces": [
+      {
+        "id": "chaindeep-labyrinth",
+        "name": "Chaindeep Labyrinth",
+        "description": "A multi-tiered maze of tunnels, sinkholes, and abandoned mining halls forming the core of Chaindeep Mine. Three entrances from the surface feed into a circular working ring lined with old hubs, stope pillars, collapsed spans, and side chambers such as the Chain Gallery, the Fungal Breach, the Webworks, and a sealed storeroom of volatile Blitspar. Vertical shafts connect the ring to lower tiers, including a flooded sump that hides a forgotten smuggler’s culvert. Heat intensifies dangerously deeper in, while spiders and skeletal remains mark the abandoned structures.",
+        "art": "chaindeep-labyrinth.png"
+      },
+      {
+        "id": "chaindeep-covenstead",
+        "name": "Covenstead",
+        "description": "A concealed ritual chamber hidden behind a chained puzzle door within the Labyrinth. The sanctum is a monumental stone hall with chain-hung braziers, a ritual dais, and a cauldron used by the Coven-at-the-Ebb. Murals show faded scenes of miners and clandestine dealings. Annexes hold herbs, tools, and a moonlit emergency shaft sealed with glass. The Coven uses the chamber for intricate rites and protects its location fiercely—only trusted individuals are ever told how to reach it.",
+        "art": "chaindeep-covenstead.png"
+      }
+    ],
+    "locationArt": "chaindeep-mine.png"
+  },
+  "stony-holt": {
+    "description": "A remote sacred-and-quarrying enclave in the eastern Ebstone Hills, centered around an abandoned quarry, an old hilltop temple, and a secret hermitage buried beneath the mound. Once a hub for miners and wandering clergy, the area now feels half-forgotten: strange sightings haunt the quarry, the temple shelters wanderers and hermits, and the hidden hermitage beneath them preserves relics far older than the village stories suggest.",
+    "majorPlaces": [
+      {
+        "id": "stony-holt-quarry",
+        "name": "Stony Holt Quarry",
+        "description": "A collapsed, weed-choked stone pit marked by derelict shelters, broken tools, and a dragon-shaped pile of stones that seems almost alive when approached. Rumours speak of ghosts, wandering figures, and the Ebstone Troll appearing in the mist. The quarry’s poor stone left it abandoned long ago, and only vagrants or passing kobolds visit now.",
+        "art": "stony-holt-quarry.png"
+      },
+      {
+        "id": "stony-holt-hermitage",
+        "name": "Stony Holt Hermitage",
+        "description": "A hidden four-chamber monastic retreat carved into the barrow beneath the temple. The chambers preserve chained books, a granite scriptorium marked by a fossilised dragon wing, a small kitchen fed by the temple’s well, and stone sleeping cells. Known only through rumours, the hermitage is occasionally used by hermits or wanderers who respect its relics and strange resident skeleton.",
+        "art": "stony-holt-hermitage.png"
+      },
+      {
+        "id": "stony-holt-temple",
+        "name": "Stony Holt Temple",
+        "description": "An old stone temple built atop the barrow mound, once serving the quarry workers of the surrounding hills. Its rib-vaulted ceiling and buttresses remain impressive despite bird-stained floors and rotting doors. Shepherds and travellers take shelter here, and some clergy still perform rites. A stone trapdoor in the floor leads down into the hidden hermitage below.",
+        "art": "stony-holt-temple.png"
+      }
+    ],
+    "locationArt": "stony-holt.png"
+  },
+  "bogfield-farm": {
+    "description": "A riverside farmstead on Ebstone’s southeastern border, built on fertile but marshy ground that gives the place its name. The farm consists of a central stone farmhouse, two barns, scattered outbuildings, and long field strips carved into the wet soil. Livestock has dwindled after repeated kobold raids from the hills, leaving only sheep and a pair of milking cows. Robert Pine tends the property alone most nights while Igneous Wylde, the owner, is usually drinking in the village tavern. The farm is productive but battered, and now at risk of being overrun if the kobolds burn the remaining barn.",
+    "majorPlaces": [
+      {
+        "id": "bogfield-barn",
+        "name": "Bogfield Barn",
+        "description": "One of the two barns on the farm, this structure is the primary livestock shelter. A central aisle runs through the ground floor with wooden stalls on both sides, feed storage at the rear, and a root cellar beneath for vegetables. Above it hangs a dry hayloft—useful but dangerously flammable, especially with kobolds attempting torch-raids at night.",
+        "art": "bogfield-barn.png"
+      },
+      {
+        "id": "bogfield-house",
+        "name": "Bogfield House",
+        "description": "A solid, single-storey stone farmhouse forming the heart of Bogfield Farm. The central hall contains an open hearth for heating and cooking, with a kitchen, parlor, and master bedroom to one side and modest staff quarters on the other. The nearby well supplies water to both the household and the barns. Despite its sturdy build, the house feels worn from years of neglect.",
+        "art": "bogfield-house.png"
+      }
+    ],
+    "locationArt": "bogfield-farm.png"
+  },
+  "blackstone-fort": {
+    "description": "A long-abandoned military outpost deep within the Ebstone Forest. The old fortress, once part of the Quince family's Iron Ring of control, has decayed into a necromantic stronghold. Blue mist clings to the collapsed walls and courtyards, and the interior is filled with skeletal remains bound in niches along the stone. Beneath the fort sprawls a vast catacomb network, now used by a necromancer raising undead warriors to attack travelers on the Sarnath Road.",
+    "majorPlaces": [
+      {
+        "id": "blackstone-fort-sarnath-road",
+        "name": "Sarnath Road",
+        "description": "A dangerous forest road connecting Ebstone and Sarnath, winding through the heart of the Ebstone Forest. Poorly maintained and little more than a rutted track in places, it is constantly patrolled by goblins, kobolds, monsters, and now undead raised from Blackstone Fort. Night travel is suicidal — the necromancer’s skeletal warbands sweep the road after dusk, attacking anyone who attempts the journey.",
+        "art": "blackstone-fort-sarnath-road.png"
+      }
+    ],
+    "locationArt": "blackstone-fort.png"
+  },
+  "strandford": {
+    "description": "A small fishing hamlet on the Snarling Coast where the River Ebb widens and spills into the sea. Strandford sits on the sandy, silty east bank, with a simple path leading north toward Ebstone Village that traders and fishermen occasionally use. Two rickety jetties serve small skiffs and a hand-operated ferry, while four modest cottages house the local families. Fish, small beer, salt, and preserved catch are sold through a hatch in one cottage, making Strandford a quiet but important stopping point for riverfolk and coastal travellers.",
+    "locationArt": "strandford.png"
+  },
+  "sarmuth": {
+    "description": "A deserted fishing hamlet on the Snarling Coast where the River Sarn empties into the sea. Sarmuth’s wooden cottages stand empty, with nets, hooks, and old supplies left where their owners dropped them. A larger boathouse contains three abandoned skiffs and walls scarred by over two hundred tally marks, with rotting chunks of cow flesh strewn across the floor. The settlement was once an active fishing outpost troubled by pirates and known for selling its catch in Ebstone, but now only wandering vagrants and Storm pilgrims pass through its silent ruins. A single skeleton lies in one of the cottages, its bones etched with the ominous message: “the joke was long as the effort; I rammed and rammed until it burst.”",
+    "locationArt": "sarmuth.png"
+  },
+  "gull": {
+    "description": "A tiny cliffside fishing hamlet perched where the Snarling Coast meets the southern Ebstone Hills. Known simply as “Gull,” the settlement consists of three squat stone huts built into the rising slope, facing the endless stormy sea. A weathered signpost marks the paths toward Outaven to the south and Sarmuth to the northwest. The hamlet’s seven remaining residents survive by fishing the harsh coastline and gathering seabird eggs from the dangerous cliff faces. Once a modest but steady community, Gull Ham has dwindled over the centuries and now feels half-abandoned, visited mainly by wanderers, hunters, and the occasional traveller passing between coastal ruins.",
+    "locationArt": "gull.png"
+  },
+  "outaven": {
+    "description": "A ruined coastal hamlet in a wind-carved dell along the Snarling Coast cliffs, abandoned after a violent raid. The houses are burnt-out shells, fishing gear lies shattered, and driftwood wreckage litters the shingle beach far below. Survivors have fled inland—some now work in Ebstone, others at Blackstone Quarry. A charred signpost still points to Gull Ham, defaced with a crude Storm Worshipper message urging children toward Stormpoint. Outaven is silent now, save for crashing waves and the distant roar of the Storm on the southern horizon.",
+    "locationArt": "outaven.png"
   }
 }

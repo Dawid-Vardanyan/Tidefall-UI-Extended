@@ -190,5 +190,179 @@
   "name": "Yori Ironhand",
   "location": "Caged outside the Ebstone Jailhouse",
   "short": "A storm-mad dwarf locked in a cage awaiting transport to Sarnath. Filthy, emaciated, and clad in torn blue robes, Yori shifts between eerie lucidity and violent, delusional outbursts. Once a pilgrim who lashed himself to Stormpoint’s rocks to feel the Storm’s power, his mind never returned. Friend to Aelar Stormborne and fully consumed by the Storm’s madness."
+  },
+  {
+  "id": "wilbon_of_the_woods",
+  "name": "Wilbon of the Woods",
+  "location": "Ebstone Forest",
+  "short": "A towering, genderless wood-fleshed spirit with glowing red eyes, feared in ancient Ebstonian folklore. Communicates by reshaping its body into letters, trades secrets for riddles or offerings, and wanders the forest with a chaotic, dangerous curiosity."
+  },
+  {
+    "id": "debaraye",
+    "name": "Debarye",
+    "location": "Welkenbare Outbuildings",
+    "short": "A young, playful Cleverwoman of the Coven-at-the-Ebb who brews potions, speaks in riddles, and wanders the Ebstone Hills gathering herbs. Helpful but elusive, tied deeply to old secrets and wary of the Necromancer."
+  },
+  {
+    "id": "garron_the_ox",
+    "name": "Garron the Ox",
+    "location": "Vaultire Mine",
+    "short": "A massive, brutal 6'6 bandit leader clad in stolen fine mail. Violent, vengeful, and feared across the Ebstone Hills, ruling the Vaultire Bandits with raw strength and cruelty."
+  },
+  {
+    "id": "lindarin",
+    "name": "Lindarin",
+    "location": "Welkenbare Outbuildings",
+    "short": "A disheveled Velorian researcher and the only survivor of the Bluestone Mine experiment. Intelligent but paranoid and secretive, hiding knowledge about the Storm Crystals and the Ebstone Troll."
+  },
+  {
+    "id": "lowen_pike",
+    "name": "Lowen Pike",
+    "location": "Blackstone Quarry",
+    "short": "A dim-witted but kind middle-aged quarryman who drifts between jobs. Earnest, unlucky, and forever trying to find a place to belong alongside his friend Tam Marlen."
+  },
+  {
+    "id": "rafe",
+    "name": "Rafe",
+    "location": "Vaultire Mine",
+    "short": "A scarred, pot-bellied dwarf of mixed blood with a crossbow and too many hidden knives. Gruff but surprisingly charming, surviving through caution, wit, and habitual thievery."
+  },
+  {
+    "id": "sarai",
+    "name": "Sarai",
+    "location": "Vaultire Mine",
+    "short": "A sharp-eyed, vindictive bandit with long white hair and a slim blade. Untrustworthy and ruthless, using relationships only for convenience and survival."
+  },
+  {
+    "id": "storm_mad_bandit",
+    "name": "Storm-mad Bandit",
+    "location": "Ebstone Hills",
+    "short": "A filthy, rambling highwayman driven mad by the Storm. Talks to unseen voices and robs travellers with a hooked fishing knife and a pocketed storm-crystal shard."
+  },
+  {
+    "id": "symeon",
+    "name": "Symeon",
+    "location": "Vaultire Mine",
+    "short": "A filthy, wiry bandit who reeks, obeys Garron, and follows Sarai like a devoted dog. Vicious, dim, and easily manipulated, yet dangerously loyal to her."
+  },
+  {
+    "id": "tam_marlen",
+    "name": "Tam Marlen",
+    "location": "Blackstone Quarry",
+    "short": "A hunched, scarred quarryman who fled the fall of Outaven. Gentle but fearful, devoted to his daughter Yael, and haunted by guilt over his lost wife."
+  },
+  {
+    "id": "wilbon_of_the_woods",
+    "name": "Wilbon of the Woods",
+    "location": "Ebstone Forest",
+    "short": "A towering, wooden forest spirit with red eyes who cannot speak but reshapes its body into letters, trading ancient secrets of Tidefall for riddles, heads, or guarded truths."
+  },
+  {
+    "id": "aelar_stormborne",
+    "name": "Aelar Stormborne",
+    "location": "Stormpoint Camp",
+    "short": "A wiry, storm-mad pilgrim leader in tattered blue robes at Stormpoint, utterly devoted to the Storm and convinced that sacrifice and conversion will usher in an approaching reckoning."
+  },
+  {
+    "id": "basser_fisher",
+    "name": "Basser Fisher",
+    "location": "Strandford Hamlet",
+    "short": "An elderly Strandford fisherman and de facto village elder, wise and cautious, who remembers Tidefall before the Storm and quietly worries over cultists and the fate of the coast."
+  },
+  {
+    "id": "cedric_heartwood",
+    "name": "Cedric Heartwood",
+    "location": "Stormpoint",
+    "short": "A thin, ink-stained former scribe turned storm zealot who trails Aelar Stormborne, nervously recording his words as sacred scripture to prove his own importance."
+  },
+  {
+    "id": "chalky_the_hale",
+    "name": "Chalky the Hale",
+    "location": "Strandford Hamlet",
+    "short": "A tough, white-haired Strandford fisherman and skipper of the Cormorant, quiet but fiercely moral, scarred by a childhood fall at Stormpoint and protective of his family and coast."
+  },
+  {
+    "id": "dann_of_eftwade",
+    "name": "Dann of Eftwade",
+    "location": "Strandford Hamlet",
+    "short": "A wiry ex–Thieves’ Guild rogue hiding out as a fisherman in Strandford, skilled with lockpicks and a bow, desperate to keep his criminal past from reaching the hamlet."
+  },
+  {
+    "id": "etsel_ferrywife",
+    "name": "Etsel Ferrywife",
+    "location": "Strandford Hamlet",
+    "short": "A tiny, layered-up elder who punts the Ebb ferry and remembers life before the Storm, warm-hearted but still capable of cracking skulls with her carved pole."
+  },
+  {
+    "id": "ganla_brewster",
+    "name": "Ganla Brewster",
+    "location": "Strandford Hamlet",
+    "short": "A stout, sharp-tongued brewer and ex-councillor from Thornbrook, running beer and quiet smuggling out of Strandford while resenting Gneiss Elbridge’s failures."
+  },
+  {
+    "id": "inspector_meredith_crow",
+    "name": "Inspector Meredith Crow",
+    "location": "Ebstone and Stormpoint",
+    "short": "A severe elven royal inspector in a long leather coat, loyal to Darion Quince and obsessed with crushing Storm cults and studying Storm-Madness with icy, magical precision."
+  },
+  {
+    "id": "keela_moor",
+    "name": "Keela Moor",
+    "location": "Stormpoint",
+    "short": "A gaunt former Strandford healer turned barefoot storm devotee, her cloudy eye and seaweed charms marking a fanatic who sees the Storm as holy punishment and renewal."
+  },
+  {
+    "id": "nadira",
+    "name": "Nadira",
+    "location": "Stormpoint Camp",
+    "short": "A lithe ex–Sarnath thief hiding among Storm pilgrims under a false name, posing as a believer while scheming to reclaim a stolen amulet lost in Bluestone Mine."
+  },
+  {
+    "id": "roosh_fisher",
+    "name": "Roosh Fisher",
+    "location": "Strandford Hamlet",
+    "short": "A tall, strong Strandford fisherman and owner of the Heron, half-joking and half-brooding, who secretly loves Dann of Eftwade and seethes with hatred for Storm cultists and his vanished brother."
+  },
+  {
+    "id": "sarnath_captain",
+    "name": "Sarnath Captain",
+    "location": "Snarling Coast",
+    "short": "A scarred, hard-eyed Sarnath army captain in red and silver, promoted for brutal efficiency and now enforcing order on the coast with zero patience for hesitation or heresy."
+  },
+  {
+    "id": "sarnath_soldier_1",
+    "name": "Sarnath Soldier 1",
+    "location": "Snarling Coast",
+    "short": "A thuggish Sarnath soldier in heavy chain, notorious for cruelty towards the weak and happily using the army as a license to hurt people instead of sitting in a cell."
+  },
+  {
+    "id": "sarnath_soldier_2",
+    "name": "Sarnath Soldier 2",
+    "location": "Stormpoint",
+    "short": "A weary veteran soldier at Stormpoint who carves kill-notches into his gauntlets, driven by bitterness and a desire for revenge on storm worshippers who mirror his wife’s murderer."
+  },
+  {
+    "id": "sarnath_soldier_3",
+    "name": "Sarnath Soldier 3",
+    "location": "Snarling Coast",
+    "short": "A young, superstitious ex-scribe pressed into the Sarnath ranks, terrified of the Storm’s power and quietly dreaming of deserting before she ever has to kill."
+  },
+  {
+    "id": "sarnath_soldier_4",
+    "name": "Sarnath Soldier 4",
+    "location": "Snarling Coast",
+    "short": "A tall, blond career soldier in gleaming black armour, ambitious and arrogant, eager to impress her superiors by cracking down hard on bandits and cultists."
+  },
+  {
+    "id": "sarnath_soldier_5",
+    "name": "Sarnath Soldier 5",
+    "location": "Snarling Coast",
+    "short": "A limping, loyal Sarnath footsoldier and former farm boy who clings to the naïve hope that enough pay and discipline will someday buy him a quiet farm far from the southern grime."
+  },
+  {
+    "id": "varos_kiln",
+    "name": "Varos Kiln",
+    "location": "Stormpoint",
+    "short": "A scarred ex-mercenary in patched blue robes and gauntlets, half-mad and fiercely protective of his fellow Storm cultists, eager to smash anyone who threatens the camp."
   }
 ]
