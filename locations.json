@@ -1,18 +1,92 @@
 {
   "stormpoint": {
-    "description": "A windswept coastal outpost watching the Snarling Coast.",
+    "description": "A ruined fort atop the Ebstone Crags, the closest point to The Storm on all of Tidefall. Wind-blasted stone, collapsing walls, and a cliffside tower overlook the roaring tempest below, now claimed by Storm Worshippers who turn the ruins into a shrine of blood and fanaticism.",
     "majorPlaces": [
-      "Harbor Master’s Office",
-      "Stormpoint Lighthouse",
-      "Broken Anchor Tavern"
-    ]
-  },
+      {
+        "id": "stormpoint-tower",
+        "name": "Stormpoint Tower",
+        "description": "A lone stone tower clinging to the cliff edge, its spiral staircase leading to an exposed peak where sacrifices are lashed to lightning and wind.",
+        "art": "stormpoint-tower.png"
+      },
+      {
+        "id": "stormpoint-tower-room",
+        "name": "Stormpoint Tower Room",
+        "description": "A long ground-floor corridor ending in a cramped chamber used by cultists for chanting, carving symbols, and preparing ritual victims.",
+        "art": "stormpoint-tower-room.png"
+      },
+      {
+        "id": "stormpoint-fort-ruins",
+        "name": "Fort Ruins",
+        "description": "The shattered remains of an old sea fort, with only scattered foundations left after centuries of storms and neglect.",
+        "art": "stormpoint-fort-ruins.png"
+      },
+      {
+        "id": "stormpoint-crags",
+        "name": "Ebstone Crags",
+        "description": "Vast, sheer cliffs of dark stone that plunge hundreds of feet into the raging sea. At night veins of blue glimmer like lightning trapped in the rock.",
+        "art": "stormpoint-crags.png"
+      },
+      {
+        "id": "stormpoint-cultist-camp",
+        "name": "Stormpoint Camp",
+        "description": "A ramshackle line of tents and makeshift shelters where itinerant Storm Worshippers live, pray, and await their chance to walk willingly into the Storm’s embrace.",
+        "art": "stormpoint-cultist-camp.png"
+      },
+      {
+        "id": "stormpoint-sacrifice-grounds",
+        "name": "Sacrifice Grounds",
+        "description": "An open cliffside platform littered with bones, burnt ropes, blue robes, and blood-stained stones where the cult performs their rituals.",
+        "art": "stormpoint-sacrifice-grounds.png"
+      }
+    ],
+    "locationArt": "stormpoint.png"
+},
   "village-of-ebstone": {
-    "description": "The bustling heart of the Ebstone Hills.",
+    "description": "A decaying frontier village near the River Ebb, once a booming mining town but now a paranoid and impoverished settlement overshadowed by the decline of its quarries and the oppressive reach of Sarnath.",
     "majorPlaces": [
-      "City Hall",
-      "Central Market",
-      "Blackstone Inn"
-    ]
+      {
+        "id": "ebstone-marketplace",
+        "name": "Ebstone Marketplace",
+        "description": "The cobbled central square of the village, now half-empty, with traders wary of outsiders and rumours spreading faster than goods.",
+        "art": "ebstone_marketplace.jpg"
+      },
+      {
+        "id": "golden-pick-tavern",
+        "name": "Golden Pick Tavern",
+        "description": "A once-bustling tavern now kept afloat by gossip, ale, and the sharp-tongued landlady Tabatha Greystone.",
+        "art": "golden_pick_tavern.jpg"
+      },
+      {
+        "id": "ebstone-bridge",
+        "name": "Ebstone Bridge",
+        "description": "A stone bridge crossing the River Ebb at the village’s north side, the main route for barges and travellers escaping the muddy roads.",
+        "art": "ebstone-bridge.png"
+      },
+      {
+        "id": "squatter-alleys",
+        "name": "Abandoned Alleys",
+        "description": "Dilapidated homes and narrow lanes occupied sporadically by squatters, storm pilgrims, or evicted families.",
+        "art": "ebstone_abandoned_alleys.jpg"
+      },
+      {
+        "id": "ebside-bogs",
+        "name": "Ebside Bogs",
+        "description": "A harsh wetland southeast of the village, avoided by locals except when desperate for shortcuts.",
+        "art": "ebside_bogs.jpg"
+      },
+      {
+        "id": "ebstone-signpost",
+        "name": "Ebstone Signpost",
+        "description": "A weather-beaten wooden sign giving distances to the surrounding hamlets and quarries across the Ebstone Hills.",
+        "art": "ebstone_signpost.jpg"
+      },
+      {
+        "id": "blackstone-quarry",
+        "name": "Blackstone Quarry",
+        "description": "The last operational quarry near Ebstone, its output dwindling but still demanded as tithe by Sarnath.",
+        "art": "blackstone_quarry.jpg"
+      }
+    ],
+    "locationArt": "village-of-ebstone.png"
   }
 }

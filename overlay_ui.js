@@ -175,7 +175,7 @@ overlay.mapImageUrl = mapImageUrl;
         border: 1px solid rgba(255,255,255,.15);
         background: rgba(0,0,0,.4);
         margin-top: 6px;
-        flex: 0 0 80%;   /* ~65% szerokości bloku map-layout przypada na mapę */
+        flex: 0 0 80%;
       }
 
       .map-image {
@@ -202,6 +202,9 @@ overlay.mapImageUrl = mapImageUrl;
         border-radius: 8px;
         border: 1px solid rgba(255,255,255,0.15);
         padding: 8px 10px;
+        max-height: 260px;
+        overflow-y: auto;
+        overflow-x: hidden;
       }
 
       .map-info-title {
@@ -337,6 +340,98 @@ overlay.mapImageUrl = mapImageUrl;
       .map-location:hover::before {
         opacity: 1;
       }
+
+      .map-location-art-wrapper {
+        display: block;               
+        width: fit-content;           
+        max-width: 100%;              
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+        background: rgba(0,0,0,0.35);
+        align-self: flex-start;       
+      }
+
+      .map-location-art {
+        display: block;
+        max-width: 280px;         
+        max-height: 160px;         
+        width: auto;               
+        height: auto;
+        object-fit: cover;
+      }
+
+      /* Major places window CSS */
+      .map-place-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+      }
+
+      .map-place-modal-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        pointer-events: auto;
+      }
+
+      .map-place-modal-content {
+        position: relative;
+        pointer-events: auto;
+        background: rgba(15, 15, 15, 0.95);
+        border-radius: 10px;
+        
+        /* NOWE */
+        width: 580px;              /* sztywna szerokość – dopasowana do dużego obrazka */
+        max-height: 80vh;          /* ograniczamy wysokość */
+        
+        padding: 16px 20px;
+        overflow-y: auto;          /* scroll dla zawartości */
+        box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+
+        word-wrap: break-word;     /* tekst zawija się */
+        overflow-wrap: break-word; /* na wszelki wypadek */
+      }
+
+      /* powiększony obrazek */
+      #place-modal-art {
+        width: 100%;              
+        max-height: 300px;        
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 12px;
+      }
+
+      .map-place-modal-close {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .map-major-place {
+        cursor: pointer;
+        position: relative;
+      }
+
+      .map-major-place::before {
+        content: "➤ ";
+        opacity: 0.8;
+      }
+
+      .map-major-place:hover {
+        filter: brightness(1.1);
+      }
+
+
 
 
       /* COINS */
@@ -749,6 +844,22 @@ overlay.mapImageUrl = mapImageUrl;
 
 
         <div class="tab-content" id="tab-map">
+          <!-- Sub-locations window -->
+          <div id="place-modal" class="map-place-modal" style="display:none;">
+            <div class="map-place-modal-backdrop"></div>
+            <div class="map-place-modal-content">
+              <button id="place-modal-close" class="map-place-modal-close">×</button>
+
+              <div id="place-modal-art-wrapper" class="map-location-art-wrapper" style="display:none;">
+                <img id="place-modal-art" class="map-location-art" alt="Place artwork" />
+              </div>
+
+              <div id="place-modal-name" class="map-info-name">–</div>
+              <div id="place-modal-desc" class="map-info-desc">
+              </div>
+            </div>
+          </div>
+
           <div class="map-layout">
             <!-- LEWA STRONA: MAPA -->
             <div class="map-wrapper" id="map-wrapper">
@@ -785,6 +896,11 @@ overlay.mapImageUrl = mapImageUrl;
               <!-- CURRENT -->
               <div class="map-info-section">
                 <div class="map-info-title">Current Location</div>
+
+                <div id="current-location-art-wrapper" class="map-location-art-wrapper" style="display:none;">
+                  <img id="current-location-art" class="map-location-art" alt="Location artwork" />
+                </div>
+
                 <div id="current-location-name" class="map-info-name">–</div>
                 <div id="current-location-desc" class="map-info-desc">
                   You are nowhere in particular.
@@ -796,6 +912,11 @@ overlay.mapImageUrl = mapImageUrl;
               <!-- SELECTED -->
               <div class="map-info-section">
                 <div class="map-info-title">Selected Location</div>
+
+                <div id="selected-location-art-wrapper" class="map-location-art-wrapper" style="display:none;">
+                  <img id="selected-location-art" class="map-location-art" alt="Location artwork" />
+                </div>
+
                 <div id="selected-location-name" class="map-info-name">–</div>
                 <div id="selected-location-desc" class="map-info-desc">
                   Click a discovered location on the map.

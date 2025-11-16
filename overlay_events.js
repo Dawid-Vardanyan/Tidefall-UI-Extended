@@ -439,11 +439,37 @@ initSpeakerAutoDetection({
     const currentDescEl = shadow.getElementById("current-location-desc");
     const currentMajorTitleEl = shadow.getElementById("current-location-major-title");
     const currentMajorListEl = shadow.getElementById("current-location-major-list");
+    const currentArtWrapperEl = shadow.getElementById("current-location-art-wrapper");
+    const currentArtEl = shadow.getElementById("current-location-art");
 
     const selectedNameEl = shadow.getElementById("selected-location-name");
     const selectedDescEl = shadow.getElementById("selected-location-desc");
     const selectedMajorTitleEl = shadow.getElementById("selected-location-major-title");
     const selectedMajorListEl = shadow.getElementById("selected-location-major-list");
+    const selectedArtWrapperEl = shadow.getElementById("selected-location-art-wrapper");
+    const selectedArtEl = shadow.getElementById("selected-location-art");
+
+    //major-locations initi
+    const placeModalEl = shadow.getElementById("place-modal");
+    const placeModalCloseEl = shadow.getElementById("place-modal-close");
+    const placeModalArtWrapperEl = shadow.getElementById("place-modal-art-wrapper");
+    const placeModalArtEl = shadow.getElementById("place-modal-art");
+    const placeModalNameEl = shadow.getElementById("place-modal-name");
+    const placeModalDescEl = shadow.getElementById("place-modal-desc");
+
+    //Modal art fallback
+    if (placeModalArtEl && placeModalArtWrapperEl) {
+      placeModalArtEl.addEventListener("error", () => {
+        const fallback = placeModalArtEl.dataset.fallback || "";
+        if (fallback && placeModalArtEl.src !== fallback) {
+          placeModalArtEl.src = fallback;
+        } else {
+          placeModalArtWrapperEl.style.display = "none";
+        }
+      });
+    }
+
+
 
 
     let locationLore = {};
@@ -464,11 +490,40 @@ initSpeakerAutoDetection({
 
     function getLocationInfo(key) {
       const info = locationLore[key] || {};
+
+      const artFile = info.locationArt || null;
+      const artUrl = artFile
+        ? browser.runtime.getURL(`images/locations/${artFile}`)
+        : null;
+
+      // normalizacja majorPlaces:
+      // - jeśli w JSON są obiekty — bierzemy je,
+      // - jeśli są stringi — konwertujemy na obiekty z samą nazwą.
+      const majorPlacesRaw = Array.isArray(info.majorPlaces) ? info.majorPlaces : [];
+      const majorPlaces = majorPlacesRaw.map(place => {
+        if (typeof place === "string") {
+          return { id: null, name: place, description: "", art: null };
+        }
+        const artFile = place.art || null;
+        const artUrl = artFile
+          ? browser.runtime.getURL(`images/locations/${artFile}`)
+          : null;
+        return {
+          id: place.id || null,
+          name: place.name || "",
+          description: place.description || "",
+          art: artUrl
+        };
+      });
+
       return {
         description: info.description || "No detailed information for this location yet.",
-        majorPlaces: Array.isArray(info.majorPlaces) ? info.majorPlaces : []
+        majorPlaces,
+        locationArt: artUrl
       };
     }
+
+
 
     function updatePanels() {
       const cur = locationState.current;
@@ -480,10 +535,24 @@ initSpeakerAutoDetection({
         currentNameEl.textContent = name;
         currentDescEl.textContent = info.description;
 
+        // ART DLA CURRENT LOCATION
+        if (currentArtWrapperEl && currentArtEl) {
+          if (info.locationArt) {
+            currentArtEl.src = info.locationArt;
+            currentArtEl.alt = `${name} artwork`;
+            currentArtWrapperEl.style.display = "block";
+          } else {
+            currentArtEl.src = "";
+            currentArtWrapperEl.style.display = "none";
+          }
+        }
+
         if (info.majorPlaces.length) {
           currentMajorTitleEl.textContent = "Major Places";
           currentMajorListEl.innerHTML = info.majorPlaces
-            .map(place => `<li>${place}</li>`)
+            .map((place, index) =>
+              `<li class="map-major-place" data-place-index="${index}">${place.name}</li>`
+            )
             .join("");
         } else {
           currentMajorTitleEl.textContent = "";
@@ -494,6 +563,12 @@ initSpeakerAutoDetection({
         currentDescEl.textContent = "You are nowhere in particular.";
         currentMajorTitleEl.textContent = "";
         currentMajorListEl.innerHTML = "";
+
+        // brak aktualnej lokacji → chowamy też art
+        if (currentArtWrapperEl && currentArtEl) {
+          currentArtEl.src = "";
+          currentArtWrapperEl.style.display = "none";
+        }
       }
 
       const sel = locationState.selected;
@@ -502,6 +577,12 @@ initSpeakerAutoDetection({
         selectedDescEl.textContent = "Click a discovered location on the map.";
         selectedMajorTitleEl.textContent = "";
         selectedMajorListEl.innerHTML = "";
+
+        // brak wybranej lokacji → chowamy art
+        if (selectedArtWrapperEl && selectedArtEl) {
+          selectedArtEl.src = "";
+          selectedArtWrapperEl.style.display = "none";
+        }
       } else {
         const btn = shadow.querySelector(`.map-location[data-loc="${sel}"]`);
         const name = btn ? btn.getAttribute("data-name") : sel;
@@ -513,14 +594,34 @@ initSpeakerAutoDetection({
           selectedDescEl.textContent = "You haven't visited this location yet.";
           selectedMajorTitleEl.textContent = "";
           selectedMajorListEl.innerHTML = "";
+
+          // lokacja nieodkryta → też chowamy art
+          if (selectedArtWrapperEl && selectedArtEl) {
+            selectedArtEl.src = "";
+            selectedArtWrapperEl.style.display = "none";
+          }
         } else {
           const info = getLocationInfo(sel);
           selectedDescEl.textContent = info.description;
 
+          // TU ogarniamy obrazek lokacji
+          if (selectedArtWrapperEl && selectedArtEl) {
+            if (info.locationArt) {
+              selectedArtEl.src = info.locationArt;           // np. runtimeURL do images/locations/xxx.png
+              selectedArtEl.alt = `${name} artwork`;
+              selectedArtWrapperEl.style.display = "block";
+            } else {
+              // brak arta w JSON → nic nie pokazujemy
+              selectedArtEl.src = "";
+              selectedArtWrapperEl.style.display = "none";
+            }
+          }
+
           if (info.majorPlaces.length) {
             selectedMajorTitleEl.textContent = "Major Places";
             selectedMajorListEl.innerHTML = info.majorPlaces
-              .map(place => `<li>${place}</li>`)
+              .map((place, index) =>
+                `<li class="map-major-place" data-place-index="${index}">${place.name}</li>`)
               .join("");
           } else {
             selectedMajorTitleEl.textContent = "";
@@ -529,7 +630,95 @@ initSpeakerAutoDetection({
         }
       }
     }
+    
+    //Selected listener
+    selectedMajorListEl.addEventListener("click", (e) => {
+      const li = e.target.closest(".map-major-place");
+      if (!li) return;
 
+      const index = parseInt(li.getAttribute("data-place-index"), 10);
+      if (Number.isNaN(index)) return;
+
+      const sel = locationState.selected;
+      if (!sel) return;
+
+      const info = getLocationInfo(sel);
+      const place = info.majorPlaces[index];
+      if (!place) return;
+
+      placeModalNameEl.textContent = place.name || "Unknown place";
+      placeModalDescEl.textContent = place.description || "";
+
+      const locationArtUrl = info.locationArt || "";
+      let artUrl = place.art || place.locationArt || "";
+
+      if (!artUrl && locationArtUrl) {
+        artUrl = locationArtUrl;
+        placeModalArtEl.dataset.fallback = "";
+      } else {
+        placeModalArtEl.dataset.fallback = locationArtUrl;
+      }
+
+      if (artUrl) {
+        placeModalArtEl.src = artUrl;
+        placeModalArtWrapperEl.style.display = "block";
+      } else {
+        placeModalArtEl.removeAttribute("src");
+        placeModalArtWrapperEl.style.display = "none";
+      }
+
+      placeModalEl.style.display = "flex";
+    });
+
+    //Current listener
+    currentMajorListEl.addEventListener("click", (e) => {
+      const li = e.target.closest(".map-major-place");
+      if (!li) return;
+
+      const index = parseInt(li.getAttribute("data-place-index"), 10);
+      if (Number.isNaN(index)) return;
+
+      const cur = locationState.current;
+      if (!cur) return;
+
+      const info = getLocationInfo(cur);
+      const place = info.majorPlaces[index];
+      if (!place) return;
+
+      placeModalNameEl.textContent = place.name || "Unknown place";
+      placeModalDescEl.textContent = place.description || "";
+
+      const locationArtUrl = info.locationArt || "";
+      let artUrl = place.art || place.locationArt || "";
+
+      if (!artUrl && locationArtUrl) {
+        artUrl = locationArtUrl;
+        placeModalArtEl.dataset.fallback = "";
+      } else {
+        placeModalArtEl.dataset.fallback = locationArtUrl;
+      }
+
+      if (artUrl) {
+        placeModalArtEl.src = artUrl;
+        placeModalArtWrapperEl.style.display = "block";
+      } else {
+        placeModalArtEl.removeAttribute("src");
+        placeModalArtWrapperEl.style.display = "none";
+      }
+
+      placeModalEl.style.display = "flex";
+    });
+
+
+    function closePlaceModal() {
+      placeModalEl.style.display = "none";
+    }
+
+    placeModalCloseEl.addEventListener("click", closePlaceModal);
+
+    placeModalEl
+      .querySelector(".map-place-modal-backdrop")
+      .addEventListener("click", closePlaceModal);
 
     function refreshMapVisuals() {
       shadow.querySelectorAll(".map-location").forEach((btn) => {
