@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Tidefall UI Extended",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Addon with multitude of functionality and tools extending your adventure with Tidefall!",
   "permissions": ["storage", "tabs"],
   "content_scripts": [{
@@ -39,7 +39,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "tidefall-ui-extended@tidefall-unofficial",
+      "id": "tidefall-ui-extended@unofficial",
       "data_collection_permissions": {
         "required": ["none"],
         "optional": []
