@@ -68,6 +68,8 @@
   setupKeyboardToggle();
   setupRuntimeMessages();
   setupHiddenObserver();
+  setupLimitHandler();
+
 
   function positionHost(position = overlay.defaultState.position) {
     if (!host) return;
@@ -1072,6 +1074,91 @@ initSpeakerAutoDetection({
       if (!message || typeof message !== "object") return;
       if (message.type === "toggle") return toggleVisibility();
       if (message.type === "setHidden") return setHiddenState(!!message.hidden);
+    });
+  }
+
+    function setupRuntimeMessages() {
+    browser.runtime.onMessage.addListener(async (message) => {
+      if (!message || typeof message !== "object") return;
+      if (message.type === "toggle") return toggleVisibility();
+      if (message.type === "setHidden") return setHiddenState(!!message.hidden);
+    });
+  }
+
+  function setupRuntimeMessages() {
+    browser.runtime.onMessage.addListener(async (message) => {
+      if (!message || typeof message !== "object") return;
+      if (message.type === "toggle") return toggleVisibility();
+      if (message.type === "setHidden") return setHiddenState(!!message.hidden);
+    });
+  }
+
+  function setupLimitHandler() {
+    const overlay = window.TFExt;
+    if (!overlay || !overlay.shouldRun || !overlay.shouldRun()) return;
+
+    // fragment tekstu z komunikatu o limicie
+    const LIMIT_TEXT_FRAGMENT = "maximum message limit";
+
+    function removeLimitMessages(root) {
+      if (!root || !root.querySelectorAll) return false;
+
+      let removed = false;
+      const paragraphs = root.querySelectorAll("p");
+
+      paragraphs.forEach((p) => {
+        const text = (p.textContent || "").toLowerCase();
+        if (!text) return;
+
+        if (text.includes(LIMIT_TEXT_FRAGMENT)) {
+          const chatMessage =
+            p.closest('[data-testid="stChatMessage"]') ||
+            p.closest(".stChatMessage");
+
+          if (chatMessage && chatMessage.parentElement) {
+            chatMessage.parentElement.removeChild(chatMessage);
+            removed = true;
+          }
+        }
+      });
+
+      if (removed && typeof overlay.showLimitWarning === "function") {
+        try {
+          overlay.showLimitWarning();
+        } catch (err) {
+          console.error("[Tidefall UI] Error showing limit warning", err);
+        }
+      }
+
+      return removed;
+    }
+
+    // Na wszelki wypadek – jakby komunikat już był
+    try {
+      removeLimitMessages(document.body);
+    } catch (err) {
+      console.error("[Tidefall UI] Initial limit scan failed", err);
+    }
+
+    // Obserwator – reaguje na nowe wiadomości
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (!mutation.addedNodes || !mutation.addedNodes.length) continue;
+
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType !== Node.ELEMENT_NODE) return;
+          try {
+            removeLimitMessages(node);
+          } catch (err) {
+            console.error("[Tidefall UI] Limit scan failed", err);
+          }
+        });
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
     });
   }
 

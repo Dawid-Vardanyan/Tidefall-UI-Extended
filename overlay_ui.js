@@ -13,6 +13,21 @@
   overlay.shadow = shadow;
   overlay.elements = overlay.elements || {};
 
+  overlay.limitWarningShown = overlay.limitWarningShown || false;
+
+  overlay.showLimitWarning = function () {
+    if (overlay.limitWarningShown) return;
+
+    const shadowRoot = overlay.shadow;
+    if (!shadowRoot) return;
+
+    const bar = shadowRoot.querySelector(".limit-warning");
+    if (!bar) return;
+
+    bar.style.display = "block";
+    overlay.limitWarningShown = true;
+  };
+
  const runtime = typeof browser !== "undefined"
     ? browser.runtime
     : (typeof chrome !== "undefined" ? chrome.runtime : null);
@@ -80,6 +95,21 @@ overlay.mapImageUrl = mapImageUrl;
         justify-content: space-between;
         gap: 8px;
         user-select: none;
+      }
+
+      .limit-warning {
+        display: none;
+        background: rgba(255, 77, 77, 0.15);
+        border-top: 1px solid rgba(255, 77, 77, 0.5);
+        border-bottom: 1px solid rgba(255, 77, 77, 0.5);
+        padding: 4px 10px;
+        font-size: 11px;
+        color: #ffb3b3;
+        text-align: left;
+      }
+
+      .limit-warning strong {
+        color: #ff4d4d;
       }
 
       .title { display:flex; align-items:center; gap:8px; }
@@ -755,12 +785,17 @@ overlay.mapImageUrl = mapImageUrl;
         </div>
       </div>
 
+      <div class="limit-warning">
+        <strong>Message limit reached.</strong> Further messages in this run may not be logged correctly. Consider restarting the campaign.
+      </div>
+
       <div class="tab-bar">
         <button class="tab-btn tab-active" data-tab="coins">Coins</button>
         <button class="tab-btn" data-tab="inventory">Inventory</button>
         <button class="tab-btn" data-tab="characters">Characters</button>
         <button class="tab-btn" data-tab="map">Map</button>
       </div>
+
 
       <div class="body">
         <div class="tab-content active" id="tab-coins">
